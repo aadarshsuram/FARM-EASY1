@@ -1,0 +1,285 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="view point" content="width=device-width,initial-scale=1.0">
+        <title>FARM EASY</title>
+        
+        <link rel="stylesheet" href="{% static 'shop.css' %}">
+        <script src="https://kit.fontawesome.com/3badcde481.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <section id="header">
+
+            <a href="#"><img src="{% static 'image/logo.png' %}" class="logo" alt=""></a>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width:500px;font-family: FontAwesome;" type="search" placeholder="&#xf002; Search" aria-label="Search">
+                <button class="search_button">Search</button>
+            </form>            <div>
+            <ul id="navbar" >
+                <li><a  href="farmeasy.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="shop.html" class="active"><i class="fa fa-shopping-bag" aria-hidden=""></i> Shop</a></li>
+                <li><a href="agri-learn.html"><i class="fa fa-leanpub" aria-hidden="true"></i> Agri-learn</a></li>
+                <li><a href="profile.html"><i class="fa fa-file-text" aria-hidden="true"></i> profile</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+            </ul>
+        </div>
+        </section>
+        <section id="header1" class="position-sticky">
+        <div>
+            <ul id="navbar1" >
+                <li><a  href="dairy.html"><i class="fa fa-cow"></i> dairy products</a></li>
+                <li><a href="poultary.html" > <i class="fa  fa-the-red-yeti"></i>poultry products</a></li>
+                <li><a href="aqua.html"><i class="fa fa-fish"></i> aqua culture products</a></li>
+                <li><a href="hardware.html"><i class="fa fa-screwdriver-wrench"></i> hardware tools</a></li>
+                
+            </ul>
+        </div>
+    </section>
+
+        <div  id="hero1">
+       
+        <div style="text-align: center;">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="shadow-lg d-flex flex-column m-3" style="background-color: rgb(255, 255, 255); text-align: center;">
+                <img src="{% static 'image/product.jpg' %}" alt="" class="selection"/>
+                <button class="button" style="margin-left: 65px;"> Using Products</button>
+            </div>
+            <div class="shadow-lg d-flex flex-column text-center m-3" style="background-color: white; text-align: center;">
+                <img src="{% static 'image/shop image1.png' %}" alt="" class="selection"/>
+                <a href="store.html"><button class="button" style="margin-left: 65px; color: white;"> Using Shop</button></a>
+            </div>
+            </div>
+        </div>
+        <section>
+            <div class="  d-flex flex-column mt-5 mr-5 ml-5" id="section1" style="top: 500px;">
+        
+                <div class=" shop1 m-3">
+
+                <div class="shopbackground shadow-lg">
+                        <div style="height: 50vh; background-color:"> 
+                        <img src="{% static 'image/Liquid Waste Decomposer.jpg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Liquid Waste Decomposer </h1>
+                        <p class="shop_product_subhead">(Developed By Dr. Krishan Chandra), Control All Types Of Soil-Borne, Foliar Diseases, Insects, And Pests.</p>
+                    </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <a href="product1.html"><button class="shop_moredeteails_button" >buy</button></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="shopbackground shadow-lg  ">
+
+                        <div style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/NETSURF Biofit Stim.jpg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">NETSURF Biofit Stim </h1>
+                        <p class="shop_product_subhead">Rich Promoter for Plant Growth And Helps To Increase Yield.</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                        <div class="" style="height: 25vh; text-align: center;">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                        <button class="shop_moredeteails_button">buy</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="image/cotton kit.jpeg" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Cotton Kit - 100% Organic </h1>
+                        <p class="shop_product_subhead">Growth & Flowering, Sucking Pest Controller, Larvae Controller, Fungus Controller All In One Kit</p>
+                
+                    </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div>
+                
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="image/utkarsh.jpeg" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Utkarsh  </h1>
+                        <p class="shop_product_subhead">CaLong Calcium Ca 10% EDTA Chelated, Perfect For All Fruit And Vegetables</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-end">
+                        <div class="" style="height: 25vh; text-align: center;">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                        <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="image/omri.jpg" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Nutribloom Organic</h1>
+                        <p class="shop_product_subhead">Liquid Humic & Fulvic Acid, Product of USA Plant, Best Plant Stimulator</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-end">
+                        <div class="" style="height: 25vh;">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                        <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+
+                <div class=" shop1 m-3 ">
+
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/mechine-1.jpeg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Suzo</h1>
+                        <p class="shop_product_subhead">Lithium-Ion Battery Sprayer With Belt, 10 Liter Tank Capacity For Gardening, Office, Farm House 6 Month Battery Warranty</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div>
+                </div>
+                <div class="shopbackground shadow-lg ">
+                        <div style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/mechine-2.jpeg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Single Bull</h1>
+                        <p class="shop_product_subhead">2 in 1 Manual & Battery Operated Pump12V x 12A, 16 Liter Capacity</p>
+                        
+                        </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div> 
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/mechine-3.jpeg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Li-Ion</h1>
+                        <p class="shop_product_subhead">Lithium Battery Sprayer 12 Volt x 12 Amp 2 Year Battery Warranty, Very Light Weight, Smooth Motor 4 LPM, 16 Liter Tank</p>
+                       </div>
+                       <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                        <div class="" style="height: 25vh; text-align: center;">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                        <button class="shop_moredeteails_button">buy</button>
+                    </div>
+                    </div>
+                
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/mechine-4.jpg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Double Bull</h1>
+                        <p class="shop_product_subhead">Battery Operated Sprayer 12 Volt x 14 Amp (18 Liter Capacity)</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div>
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:">
+                        <img src="{% static 'image/mechine-5.jpg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Suzo Max</h1>
+                        <p class="shop_product_subhead">Power Sprayer , 4 Stroke Petrol Engine Operated Power Sprayer, 20 Liter Capacity</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div>
+                </div>
+            
+                </div>
+        </div>
+        </section>
+        <div class=" d-flex flex-row justify-content-center" style="text-align: center;">
+            <div class="d-flex flex-row mb-5">
+                <button class="Btn">1</button>
+                <button class="Btn">2</button>
+                <button class="Btn">3</button>
+                <button class="Btn">4</button>
+            </div>
+        </div>
+    </div>
+        <!-- footer  -->
+        <div class="background-11 pt-3 pb-2 pl-2">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12 col-md-6">
+
+                        <div class="text-center text-md-left">
+                            <a href="#"><img src="image/logo.png" class="logo" style="margin:10px;" alt=""></a> 
+                        </div>
+                        <div class="d-flex flex-row justify-content-center justify-content-md-start">
+                            <div class="iconcontainer ">
+                                <i class="fab fa-google icon1"></i>
+                            </div>
+                            <div class="iconcontainer">
+                                <i class="fab fa-twitter icon1"></i>
+                            </div>
+                            <div class="iconcontainer">
+                                <i class="fab fa-instagram icon1"></i>
+                            </div>
+                            <div class="iconcontainer">
+                                <i class="fab fa-linkedin icon1"></i>
+                            </div>
+                        </div>
+                        <p class="description1 mt-3 mb-3" style="font-size:20px;">24-25/3 ameerpet,hyderabad</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <ul class="list">
+                            <h1 class="listhead">Contact Us</h1>
+                            <li class="discription1"><i class="fa fa-envelope icon2"></i> suramaadarsh@gmail.com</li>
+                            <li class="discription1"><i class="fa fa-phone-alt icon2"></i> 1234506789</li>
+                            <li class="discription1"><i class="fab fa-skype icon2"></i>suram aadarsh</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <ul class="list">
+                            <h1 class="listhead">Let Us Help You</h1>
+                            <li class="discription1">100% Purchase</li>
+                            <li class="discription1">Protection</li>
+                            <li class="discription1">Your Account</li>
+                            <li class="discription1">Return Center</li>
+                            <li class="discription1">Help</li>
+                        </ul>
+                    </div>
+                    <hr class=" line col-10">
+                    <div class="p-3 col-12 text-center">
+                        <p class="description1 mt-3 mb-5" style="font-size:20px; color:#959ead;"><i class="fa fa-copyright icon1"></i> 2022 by aadarsh. Created with Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="farmeasy.js"></script>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </body>

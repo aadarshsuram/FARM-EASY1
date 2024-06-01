@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="view point" content="width=device-width,initial-scale=1.0">
+        <title>FARM EASY</title>
+        
+        <link rel="stylesheet" href="{% static 'shop.css' %}">
+        <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section id="header" class="shadow-lg">
+            <a href="#"><img src="{% static 'image/logo.png' %}" class="logo" alt=""></a>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width:500px;font-family: FontAwesome;" type="search" placeholder="&#xf002; Search" aria-label="Search">
+                <button class="search_button">Search</button>
+            </form>  
+            <!-- navigation bar  -->
+        <div>
+            <ul id="navbar" >
+                <li><a  href="farmeasy.html" class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="shop.html"><i class="fa fa-shopping-bag" aria-hidden=""></i> Shop</a></li>
+                <li><a href="agri-learn.html"><i class="fa fa-leanpub" aria-hidden="true"></i> Agri-learn</a></li>
+                <li><a href="profile.html"><i class="fa fa-file-text" aria-hidden="true"></i> profile</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+            </ul>
+        </div>
+        </section>
+        <section>
+            <div class="  d-flex flex-column mt-5 mr-5 ml-5" id="section1" style="top: 500px;">
+        
+                <div class=" shop1 m-3">
+
+                <div class="shopbackground shadow-lg">
+                        <div style="height: 50vh; background-color:"> 
+                        <img src="{% static 'image/Liquid Waste Decomposer.jpg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Liquid Waste Decomposer </h1>
+                        <p class="shop_product_subhead">(Developed By Dr. Krishan Chandra), Control All Types Of Soil-Borne, Foliar Diseases, Insects, And Pests.</p>
+                    </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button" ><a href="product1.html">buy</a></button>
+                        </div>
+                        </div>
+                </div>
+                <div class="shopbackground shadow-lg  ">
+
+                        <div style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/NETSURF Biofit Stim.jpg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">NETSURF Biofit Stim </h1>
+                        <p class="shop_product_subhead">Rich Promoter for Plant Growth And Helps To Increase Yield.</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                        <div class="" style="height: 25vh; text-align: center;">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                        <button class="shop_moredeteails_button">buy</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/cotton kit.jpeg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Cotton Kit - 100% Organic </h1>
+                        <p class="shop_product_subhead">Growth & Flowering, Sucking Pest Controller, Larvae Controller, Fungus Controller All In One Kit</p>
+                
+                    </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div>
+                
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/utkarsh.jpeg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Utkarsh  </h1>
+                        <p class="shop_product_subhead">CaLong Calcium Ca 10% EDTA Chelated, Perfect For All Fruit And Vegetables</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-end">
+                        <div class="" style="height: 25vh; text-align: center;">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                        <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/omri.jpg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Nutribloom Organic</h1>
+                        <p class="shop_product_subhead">Liquid Humic & Fulvic Acid, Product of USA Plant, Best Plant Stimulator</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-end">
+                        <div class="" style="height: 25vh;">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                        <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class=" shop1 m-3 ">
+
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/mechine-1.jpeg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Suzo</h1>
+                        <p class="shop_product_subhead">Lithium-Ion Battery Sprayer With Belt, 10 Liter Tank Capacity For Gardening, Office, Farm House 6 Month Battery Warranty</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div>
+                </div>
+                <div class="shopbackground shadow-lg ">
+                        <div style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/mechine-2.jpeg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Single Bull</h1>
+                        <p class="shop_product_subhead">2 in 1 Manual & Battery Operated Pump12V x 12A, 16 Liter Capacity</p>
+                        
+                        </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div> 
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/mechine-3.jpeg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Li-Ion</h1>
+                        <p class="shop_product_subhead">Lithium Battery Sprayer 12 Volt x 12 Amp 2 Year Battery Warranty, Very Light Weight, Smooth Motor 4 LPM, 16 Liter Tank</p>
+                       </div>
+                       <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                        <div class="" style="height: 25vh; text-align: center;">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                        <button class="shop_moredeteails_button">buy</button>
+                    </div>
+                    </div>
+                
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:;">
+                        <img src="{% static 'image/mechine-4.jpg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Double Bull</h1>
+                        <p class="shop_product_subhead">Battery Operated Sprayer 12 Volt x 14 Amp (18 Liter Capacity)</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div>
+                </div>
+                <div class="shopbackground shadow-lg">
+                    <div class="" style="height: 50vh; background-color:">
+                        <img src="{% static 'image/mechine-5.jpg' %}" class="shop_product_image"/>
+                        <h1 class="shop_product_head">Pad Corp Suzo Max</h1>
+                        <p class="shop_product_subhead">Power Sprayer , 4 Stroke Petrol Engine Operated Power Sprayer, 20 Liter Capacity</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start" style="height: 40vh;">
+                            <div class="" style="height: 25vh; text-align: center;">
+                            <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                            <p><i class="fa fa-inr shop_product_price" aria-hidden="true"></i> <span class="shop_product_price">750.00</span></p>
+                            <button class="shop_moredeteails_button">buy</button>
+                        </div>
+                        </div>
+                </div>
+            
+                </div>
+        </div>
+        </section>

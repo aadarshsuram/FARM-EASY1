@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'spartan'; 
+}
+h1 {font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+ .section-p1 {
+padding: 40px 80px;
+}
+.section-m1 {
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+} 
+/* header start*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 20px 80px;
+    background: #0eb79b;
+    box-shadow: 0 5px 15px rgba(0,0,0,0,0);
+    z-index:999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding:0 15px ;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600px ;
+    color: white;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #010101;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #101b1b;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* home page*/
+#hero{
+    background-image: url("image/farmerbg.jpeg");
+    background-attachment: fixed;
+    height: 90vh;
+    width: 100%;
+    background-size:cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #088178;
+}
+#hero button{
+    background-color: #ffbc04;
+    color: white;
+    border-radius: 10px;
+   text-decoration: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
+    border-color: transparent;
+}
+
+.logo{
+    height: 60px;
+    width: 110px;
+}
+
+.search_button{
+    background-color: white;
+    color: rgb(103, 99, 99);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    border-color: transparent;
+}
+
+.shop_pesti
+{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    background-color: white;
+}
+
+.container-1{
+    background-color: rgb(249, 245, 245);
+    padding: 30px;
+    width: 430px;
+    margin: 20px;
+}
+
+.caption{
+    font-size: 30px;
+    font-family: 'Roboto';
+    margin: 15px;
+    color: black;
+
+}
+
+.iconcontainer {
+    background-color: #202b36;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 13px;
+    margin: 7px;
+}
+
+.icon1 {
+    color: #5a7184;
+    font-size: 25px;
+}
+
+.icon2 {
+    color: #5a7184;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.background-11 {
+    background-color: #19232d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding: 5px;
+    color: #5a7184;
+
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.listhead {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.discription1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.line {
+    background-color: #5a7184;
+    font-size: 3px;
+}
+
+.featured_products{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+}
+
+.description11{
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+.description12{
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#hero32{
+    background-color: #1dd4c5;
+    color: white;
+    border-radius: 10px;
+   text-decoration: center;
+   text-align: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 30px;
+    height: 50px;
+    width: 100px;
+    border-color: transparent;
+}
+}
+.ytlink{ 
+text-align:middle;
+text-decoration-line: none;
+text-decoration-color: brown;
+text-shadow: #19232d;
+}
+
+.vedio{
+    height: 250px;
+    width: 400px;
+    box-shadow: 20px;
+}
+
+.vediocon{
+    background-color: #47d0f2;
+    width: 440px;
+    height: 290px;
+    margin-left: 30px;
+    margin-right: 15px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.heading{
+    color: #010101;
+    font-family: 'Arial';
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+#header1{
+    align-items: center;
+    justify-content:space-between ;
+    padding-top: 5px;
+    background: white;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding:0 15px ;
+    position: relative;
+}
+#navbar1 li{
+    list-style: none;
+    padding:0 15px ;
+    position: relative;
+}
+
+#navbar1 li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600px ;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600px ;
+    color: white;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #010101;
+
+}
+#navbar1 li a:hover,
+#navbar1 li a.active{
+    color: #010101;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #101b1b;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#navbar1 li a.active::after,
+#navbar1 li a:hover::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #101b1b;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+

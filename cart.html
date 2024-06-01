@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="view point" content="width=device-width,initial-scale=1.0">
+        <title>FARM EASY</title>
+        
+        <link rel="stylesheet" href="{% static 'shop.css' %}">
+        <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section id="header" class="shadow-lg">
+            <a href="#"><img src="{% static 'image/logo.png' %}" class="logo" alt=""></a>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width:500px;font-family: FontAwesome;" type="search" placeholder="&#xf002; Search" aria-label="Search">
+                <button class="search_button">Search</button>
+            </form>          
+              <div>
+            <ul id="navbar" >
+                <li><a  href="farmeasy.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="shop.html"><i class="fa fa-shopping-bag" aria-hidden=""></i> Shop</a></li>
+                <li><a href="agri-learn.html"><i class="fa fa-leanpub" aria-hidden="true"></i> Agri-learn</a></li>
+                <li><a href="profile.html"><i class="fa fa-file-text" aria-hidden="true"></i> profile</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+            </ul>
+        </div>
+        </section>
+
+        <section class="h-100 h-custom" style="background-color: #029c35;">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12">
+                  <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                    <div class="card-body p-0">
+                      <div class="row g-0">
+                        <div class="col-lg-8">
+                          <div class="p-5">
+                            <div class="d-flex justify-content-between align-items-center mb-5">
+                              <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                               <h6 class="mb-0 text-muted">3 items</h6>
+                              </div>
+                              <hr class="my-4">
+          
+                             <div class="row mb-4 d-flex justify-content-between align-items-center">
+                              <div class="col-md-2 col-lg-2 col-xl-2">
+                                <img src="{ % static 'ferti1.jpeg' %}"/>
+                                 </div>
+                                 <div class="col-md-3 col-lg-3 col-xl-3">
+                                 <h6 class="text-muted">ferti1</h6>
+                                 <h6 class="text-black mb-0">ferti1</h6>
+                                 </div>
+                                 <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                 <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                  <i class="fas fa-minus"></i>
+                                 </button>
+          
+                                 <input id="form1" min="0" name="quantity" value="1" type="number"
+                                  class="form-control form-control-sm" />
+          
+                                 <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                  <i class="fas fa-plus"></i>
+                                 </button>
+                                 </div>
+                                 <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                 <h6 class="mb-0">rs: 750</h6>
+                                 </div>
+                                 <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                 <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                                 </div>
+                                 </div>
+          
+                                  <hr class="my-4">
+          
+                                 <div class="row mb-4 d-flex justify-content-between align-items-center">
+                                  <div class="col-md-2 col-lg-2 col-xl-2">
+                                 <img
+                                  src="{% static 'ferti2.jpeg' %}"
+                                  class="img-fluid rounded-3" alt="">
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-xl-3">
+                                <h6 class="text-muted">ferti2</h6>
+                                <h6 class="text-black mb-0">ferti2</h6>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                  <i class="fas fa-minus"></i>
+                                </button>
+          
+                                <input id="form1" min="0" name="quantity" value="1" type="number"
+                                  class="form-control form-control-sm" />
+          
+                                <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                  <i class="fas fa-plus"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                <h6 class="mb-0">rs:750</h6>
+                              </div>
+                              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                              </div>
+                            </div>
+          
+                            <hr class="my-4">
+          
+                            <div class="row mb-4 d-flex justify-content-between align-items-center">
+                              <div class="col-md-2 col-lg-2 col-xl-2">
+                                <img
+                                    src="{% static 'ferti3.jpeg'%}"
+                                  class="img-fluid rounded-3" alt="">
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-xl-3">
+                                <h6 class="text-muted">ferti3</h6>
+                                <h6 class="text-black mb-0">ferti3</h6>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                  <i class="fas fa-minus"></i>
+                                </button>
+          
+                                <input id="form1" min="0" name="quantity" value="1" type="number"
+                                  class="form-control form-control-sm" />
+          
+                                <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                  <i class="fas fa-plus"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                <h6 class="mb-0">rs:750</h6>
+                              </div>
+                              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                              </div>
+                            </div>
+          
+                            <hr class="my-4">
+          
+                            <div class="pt-5">
+                              <h6 class="mb-0"><a href="#!" class="text-body"><i
+                                    class="fas fa-long-arrow-alt-left me-2"></i><a href="shop.html">Back to shop</a></a></h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 bg-grey">
+                          <div class="p-5">
+                            <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                            <hr class="my-4">
+          
+                            <div class="d-flex justify-content-between mb-4">
+                              <h5 class="text-uppercase">items 3</h5>
+                              <h5>rs : 2,250</h5>
+                            </div>
+          
+                            <h5 class="text-uppercase mb-3">Shipping</h5>
+          
+                            <div class="mb-4 pb-2">
+                              <select class="select">
+                                <option value="1">Standard-Delivery- rs:10.00</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                              </select>
+                            </div>
+          
+                            <h5 class="text-uppercase mb-3">Give code</h5>
+          
+                            <div class="mb-5">
+                              <div class="form-outline">
+                                <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Examplea2">Enter your code</label>
+                              </div>
+                            </div>
+          
+                            <hr class="my-4">
+          
+                            <div class="d-flex justify-content-between mb-5">
+                              <h5 class="text-uppercase">Total price</h5>
+                              <h5>rs: 2,260.00</h5>
+                            </div>
+          
+                            <button type="button" class="btn btn-dark btn-block btn-lg"
+                              data-mdb-ripple-color="dark">Register</button>
+          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- footer  -->
+        <div class="background-11 pt-5 pb-2 pl-2">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12 col-md-6">
+
+                        <div class="text-center text-md-left">
+                            <a href="#"><img src="image/logo.png" class="logo" style="margin:10px;" alt=""></a> 
+                        </div>
+                        <div class="d-flex flex-row justify-content-center justify-content-md-start">
+                            <div class="iconcontainer ">
+                                <i class="fab fa-google icon1"></i>
+                            </div>
+                            <div class="iconcontainer">
+                                <i class="fab fa-twitter icon1"></i>
+                            </div>
+                            <div class="iconcontainer">
+                                <i class="fab fa-instagram icon1"></i>
+                            </div>
+                            <div class="iconcontainer">
+                                <i class="fab fa-linkedin icon1"></i>
+                            </div>
+                        </div>
+                        <p class="description1 mt-3 mb-3" style="font-size:20px;">24-25/3 ameerpet,hyderabad</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <ul class="list">
+                            <h1 class="listhead">Contact Us</h1>
+                            <li class="discription1"><i class="fa fa-envelope icon2"></i> suramaadarsh@gmail.com</li>
+                            <li class="discription1"><i class="fa fa-phone-alt icon2"></i> 1234506789</li>
+                            <li class="discription1"><i class="fab fa-skype icon2"></i>suram aadarsh</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <ul class="list">
+                            <h1 class="listhead">Let Us Help You</h1>
+                            <li class="discription1">100% Purchase</li>
+                            <li class="discription1">Protection</li>
+                            <li class="discription1">Your Account</li>
+                            <li class="discription1">Return Center</li>
+                            <li class="discription1">Help</li>
+                        </ul>
+                    </div>
+                    <hr class=" line col-10">
+                    <div class="p-3 col-12 text-center">
+                        <p class="description1 mt-3 mb-5" style="font-size:20px; color:#959ead;"><i class="fa fa-copyright icon1"></i> 2022 by aadarsh. Created with Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      </body>  
+</html>

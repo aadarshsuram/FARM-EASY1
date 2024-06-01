@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="view point" content="width=device-width,initial-scale=1.0">
+        <title>FARM EASY</title>
+        
+        <link rel="stylesheet" href="{% static 'shop.css' %}">
+        <script src="https://kit.fontawesome.com/3badcde481.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <section id="header">
+
+            <a href="#"><img src="{% static 'image/logo.png' %}" class="logo" alt=""></a>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width:500px;font-family: FontAwesome;" type="search" placeholder="&#xf002; Search" aria-label="Search">
+                <button class="search_button">Search</button>
+            </form>            <div>
+            <ul id="navbar" >
+                <li><a  href="farmeasy.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="shop.html" class="active"><i class="fa fa-shopping-bag" aria-hidden=""></i> Shop</a></li>
+                <li><a href="agri-learn.html"><i class="fa fa-leanpub" aria-hidden="true"></i> Agri-learn</a></li>
+                <li><a href="profile.html"><i class="fa fa-file-text" aria-hidden="true"></i> profile</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+            </ul>
+        </div>
+        </section>
+        <section id="header1" class="position-sticky">
+        <div>
+            <ul id="navbar1" >
+                <li><a  href="dairy.html"><i class="fa fa-cow"></i> dairy products</a></li>
+                <li><a href="poultary.html" > <i class="fa  fa-the-red-yeti"></i>poultry products</a></li>
+                <li><a href="aqua.html"><i class="fa fa-fish"></i> aqua culture products</a></li>
+                <li><a href="hardware.html"><i class="fa fa-screwdriver-wrench"></i> hardware tools</a></li>
+                
+            </ul>
+        </div>
+    </section>
+    <section>
+        <p>
+            dairy
+        </p>
+    </section>
